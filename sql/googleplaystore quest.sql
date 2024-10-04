@@ -35,3 +35,23 @@ FROM df_1
 GROUP BY category, rating
 ORDER BY category, total_rating DESC;
 
+with top10_category as (
+     select Category, avg(Rating) as avg_rate, SUM(REPLACE(Installs, ',','')+ 0) as install_count
+     from google.cleanedfile
+     group by Category
+     order by install_count DESC
+     limit 10
+) 
+select Category, avg_rate
+from top10_category
+order by avg_rate DESC;
+
+-- categories , reviews
+select Category,SUM(Reviews) as total_reviews
+from reviews
+group by Category
+order by total_reviews DESC
+LIMIT 12;
+# is equivalent to (in pandas):
+# grouped_df = merged_df[['Category', 'Reviews']].groupby('Category').sum().sort_values(by='Reviews', ascending=False)
+
