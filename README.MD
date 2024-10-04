@@ -22,3 +22,6 @@ Top Apps: Subway Surfers, Instagram, and Google Drive rank as the most installed
 Games Category Dominance: Games lead not only in the number of installs but also in average ratings and total reviews. Additionally, the Games category has the broadest content rating, making it accessible to users of all ages, from kids to adults.<br>
 Positive Review Sentiment: The most installed apps tend to receive positive sentiment in user reviews, indicating strong user satisfaction across these popular apps.<br>
 
+Presentation link: <br>
+https://docs.google.com/presentation/d/12WfZyB6L89LJqquXpKVZPL6968LISa5wnLZ9wjHAXb4/edit#slide=id.p1    
+
